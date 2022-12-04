@@ -1,0 +1,139 @@
+body{
+	background-image: url('../img/Mar.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding-top: 3em;
+    max-width: 40em;
+	margin: auto;
+    font-family: sans-serif;
+	text-align: center;
+}
+header {
+    line-height: 50px;
+    background-color: black;
+    opacity: 0.6;
+	text-align: center;
+	border: white 5px double;
+	color: white;
+	border-radius: 40px;
+
+}
+h2{
+	color: black;
+}
+.pregunta{
+	color: black;
+}
+.contenedorPregunta{
+	background-color: none;
+	padding-top: 1em;
+	padding-bottom: 3em;
+	color: white;
+}
+
+
+textarea{
+	font-size: 1.5em;
+	width:100%;
+}
+
+button{
+	margin-top:1em;
+	font-size: 2em;
+	width:100%;
+}
+
+.contenedorRespuestas{
+}
+
+.boton{
+	width: 50%;
+	height:45px;
+
+	border-radius: 100px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;       
+	
+	background-color: black;
+	opacity: 1;
+	float:left;
+	
+	text-decoration: none;
+}
+.boton:hover{
+	/*background-color: #666666*/
+	background-color: #664466;
+	color: #FFFFFF;	
+}
+
+.limpiar{
+	clear: both;
+}
+
+/*footer {
+    text-align: center;
+    padding: 15px;
+	background-color: black;
+	opacity: 0.6;
+	border: white 5px double;
+	border-radius: 40px;
+
+}*/
+.regreso{
+	color: black;
+	text-decoration: none;
+}
+.ali-derecha{
+	/*float: left;*/
+	width: 300px;
+	height: 200px;
+}
+/*---------------------------------------------------------------------------*/
+.regre{
+	padding: 10px 85px;
+	background: #664466;
+	border: 1px solid #4896c4;
+	cursor: pointer;
+	position: relative;
+	border-radius: 3px;
+	overflow: hidden;
+	border-radius: 100px;
+ }
+.regre::before{
+	content: 'Volver';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+}
+.regre::after{
+	content: 'Ahora';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+	opacity: 0;
+}
+.regre:hover::before{
+	transform: translate(-50%, -50%) scale(3);
+	opacity: 0;
+}
+.regre:hover::after{
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+}
